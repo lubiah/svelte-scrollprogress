@@ -5,6 +5,7 @@ import adapter from "@sveltejs/adapter-static";
 
 const mode = process.env.NODE_ENV;
 
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: [".svelte", ...mdsvexConfig.extensions],
