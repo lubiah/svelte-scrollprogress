@@ -1,0 +1,45 @@
+{
+  "name": "svelte-scrollprogress",
+  "version": "1.0.0",
+  "description": "A svelte component which displays how far down you have scrolled a page",
+  "keywords": [
+    "svelte",
+    "svelte components",
+    "svelte scroll",
+    "scroll progress"
+  ],
+  "author": {
+    "name": "Lucretius Biah",
+    "email": "lucretiusbiah@protonmail.com",
+    "url": "https://kudadam.com"
+  },
+  "bugs": {
+    "email": "lucretiusbiah@protonmail.com",
+    "url": "https://github.com/kudadam/svelte-scrollprogress/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kudadam/svelte-scrollprogress.git"
+  },
+  "homepage": "https://kudadam.github.io/svelte-scrollprogress/",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "deploy": "node ./gh-pages.js",
+    "preview": "svelte-kit preview",
+    "prepare": "svelte-kit sync",
+    "check": "svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./jsconfig.json --watch"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "1.0.0-next.34",
+    "@sveltejs/kit": "next",
+    "gh-pages": "^4.0.0",
+    "mdsvex": "^0.10.6",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "typescript": "^4.7.2"
+  },
+  "type": "module"
+}
