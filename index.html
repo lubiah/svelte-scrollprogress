@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content=""><title>Svelte ScrollProgress</title>
+	<link rel="stylesheet" href="/_app/immutable/assets/pages/index.md-c7d49d1c.css">
+	<link rel="modulepreload" href="/_app/immutable/start-2c3f73c4.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-7835d0b1.js">
+	<link rel="modulepreload" href="/_app/immutable/layout.svelte-2714beb8.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/index.md-319c6265.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+
+<h1>Svelte ScrollProgress</h1>
+<p>A scroll progress indicator component for Svelte</p>
+<h2>Installing</h2>
+<ul><li>pnpm<br>
+<code>pnpm add -D svelte-scrollprogress</code></li>
+<li>npm<br>
+<code>npm install -D svelte-scrollprogress</code></li>
+<li>yarn<br>
+<code>yarn add -D svelte-scrollprogress</code></li></ul>
+<h2>Usage</h2>
+<p>Using this component is very easy. Just import it and you are good to go</p>
+<pre class="language-svelte"><!-- HTML_TAG_START --><code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">import</span> Progress <span class="token keyword">from</span> <span class="token string">"svelte-scrollprogress"</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- Just make sure your content is long enough to overflow the screen.
+Am gonna add some lorem to make the screen overflow
+
+--></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Progress</span><span class="token punctuation">/></span></span>
+
+<span class="token comment">&lt;!-- In order to customize, just fill in the props with values --></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Progress</span> <span class="token attr-name">color</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>orange<span class="token punctuation">"</span></span> <span class="token attr-name">background</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>green<span class="token punctuation">"</span></span> <span class="token attr-name">zIndex=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token number">9999</span><span class="token punctuation">&#125;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>10px<span class="token punctuation">"</span></span> <span class="token attr-name">debounceTime=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token number">20</span><span class="token punctuation">&#125;</span></span><span class="token punctuation">/></span></span></code><!-- HTML_TAG_END --></pre>
+<div class="svelte-scrollprogress-container bottom svelte-15aelsv" style="--ssp-background: transparent;"><div class="svelte-scrollprogress bottom svelte-15aelsv" style="--ssp-color: orange; --ssp-height: 6px; --ssp-width: 0%; --ssp-z-index: 999;"></div></div>
+
+<h2>Customisation</h2>
+<p>This component is very customizable, almost everything can be changed</p>
+<div><div><label for="color">Color</label>
+		<input id="color" type="color" value="orange"></div>
+	<div><label for="height">Height</label>
+		<input type="text" value="6px"></div>
+	<div><label for="background">Background</label>
+		<input type="color" value="transparent"></div>
+	<div><label for="position">Position</label>
+		<select id="position"><option value="top">Top</option><option value="bottom">Bottom</option><option value="left">Left</option><option value="right">Right</option></select></div>
+	<span>+ many more</span></div>
+<h2>Props</h2>
+<table><thead><tr><th>Property</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th></tr></thead>
+<tbody><tr><td>color</td>
+<td>String</td>
+<td>The color of the scrollbar component. Any valid CSS background property is allowed. Including images too</td>
+<td>tomato</td></tr>
+<tr><td>position</td>
+<td>String</td>
+<td>The position of the scrollbar component. Valid values are “top”, “bottom”, “left” and right”</td>
+<td>bottom</td></tr>
+<tr><td>zIndex</td>
+<td>Integer</td>
+<td>The order of overlapping elements</td>
+<td>999</td></tr>
+<tr><td>height</td>
+<td>String</td>
+<td>The height or width of the scrollbar component. Any valid CSS size value is allowed</td>
+<td>5px</td></tr>
+<tr><td>debounceTime</td>
+<td>Integer</td>
+<td>Since we use the scroll event to calculate the percentage, we only need to calculate when the user has finished scrolling. We use a debounce to repeat the rate at which the function is fired. Time is calculated in milliseconds</td>
+<td>10</td></tr>
+<tr><td>background</td>
+<td>String</td>
+<td>The background color of the scroll bar component. Any valid CSS background property is accepted</td>
+<td>transparent</td></tr></tbody></table>
+<h2>Events</h2>
+<p>The component does fire some events</p>
+<table><thead><tr><th>Event Name</th>
+<th>Description</th></tr></thead>
+<tbody><tr><td>change</td>
+<td>This is called whenever the scroll value changes</td></tr></tbody></table>
+
+
+		<script type="module" data-sveltekit-hydrate="1h1k0fe">
+		import { start } from "/_app/immutable/start-2c3f73c4.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1h1k0fe"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 2],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
+	</body>
+</html>
