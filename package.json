@@ -1,6 +1,8 @@
 {
 	"name": "svelte-scrollprogress",
-	"version": "1.0.3",
+	"description": "A powerful package that adds a customizable scroll meter to your website or web application. It dynamically displays your scrolling progress and allows you to position it anywhere - top, bottom, left, or right - to fit your design perfectly.",
+	"homepage": "https://kudadam.github.io/svelte-scrollprogress",
+	"version": "1.0.4",
 	"keywords": [
 		"svelte",
 		"scroll progress",
@@ -8,6 +10,15 @@
 		"svelte components",
 		"web components"
 	],
+	"author": {
+		"email": "lucretiusbiah@protonmail.com",
+		"url": "https://www.kudadam.com",
+		"name": "Lucretius Biah"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kudadam/svelte-scrollprogress.git"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
