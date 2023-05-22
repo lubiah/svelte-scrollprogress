@@ -1,6 +1,7 @@
 <script lang="ts">
     import { debounce } from "./utils.js";
     import { createEventDispatcher } from "svelte";
+	import { onMount } from "svelte";
 
     let width: string = "0%";
     export let zIndex: number = 999;
@@ -24,6 +25,10 @@
 		width = scroll;
      
 	}
+
+	onMount(()=>{
+		watchScroll();
+	})
 </script>
 
 
