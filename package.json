@@ -1,8 +1,8 @@
 {
 	"name": "svelte-scrollprogress",
 	"description": "A powerful package that adds a customizable scroll meter to your website or web application. It dynamically displays your scrolling progress and allows you to position it anywhere - top, bottom, left, or right - to fit your design perfectly.",
-	"homepage": "https://kudadam.github.io/svelte-scrollprogress",
-	"version": "1.0.6",
+	"homepage": "https://lubiah.github.io/svelte-scrollprogress",
+	"version": "1.0.7",
 	"keywords": [
 		"svelte",
 		"scroll progress",
@@ -12,12 +12,12 @@
 	],
 	"author": {
 		"email": "lucretiusbiah@protonmail.com",
-		"url": "https://www.kudadam.com",
+		"url": "https://www.lubiah.com",
 		"name": "Lucretius Biah"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kudadam/svelte-scrollprogress.git"
+		"url": "https://github.com/lubiah/svelte-scrollprogress.git"
 	},
 	"scripts": {
 		"dev": "vite dev",
@@ -47,24 +47,24 @@
 		"svelte": "^3.54.0"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-static": "^2.0.2",
-		"@sveltejs/kit": "^1.5.0",
-		"@sveltejs/package": "^2.0.0",
-		"@typescript-eslint/eslint-plugin": "^5.45.0",
-		"@typescript-eslint/parser": "^5.45.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.26.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"publint": "^0.1.9",
-		"svelte": "^3.54.0",
-		"svelte-check": "^3.0.1",
-		"tslib": "^2.4.1",
-		"typescript": "^5.0.0",
-		"vite": "^4.5.3",
-		"vitest": "^0.25.3"
+		"@playwright/test": "^1.57.0",
+		"@sveltejs/adapter-static": "^3.0.10",
+		"@sveltejs/kit": "^2.49.3",
+		"@sveltejs/package": "^2.5.7",
+		"@typescript-eslint/eslint-plugin": "^8.52.0",
+		"@typescript-eslint/parser": "^8.52.0",
+		"eslint": "^9.39.2",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-svelte": "^3.13.1",
+		"prettier": "^3.7.4",
+		"prettier-plugin-svelte": "^3.4.1",
+		"publint": "^0.3.16",
+		"svelte": "^5.46.1",
+		"svelte-check": "^4.3.5",
+		"tslib": "^2.8.1",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.0",
+		"vitest": "^4.0.16"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
