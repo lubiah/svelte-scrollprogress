@@ -1,2 +1,3 @@
-import component from "./index.svelte";
-export default component;
+// Reexport your entry components here
+import Component from "./index.svelte";
+export default Component;

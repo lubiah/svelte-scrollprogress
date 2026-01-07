@@ -1,72 +1,64 @@
 {
-	"name": "svelte-scrollprogress",
-	"description": "A powerful package that adds a customizable scroll meter to your website or web application. It dynamically displays your scrolling progress and allows you to position it anywhere - top, bottom, left, or right - to fit your design perfectly.",
-	"homepage": "https://lubiah.github.io/svelte-scrollprogress",
-	"version": "1.0.7",
-	"keywords": [
-		"svelte",
-		"scroll progress",
-		"scroll",
-		"svelte components",
-		"web components"
-	],
-	"author": {
-		"email": "lucretiusbiah@protonmail.com",
-		"url": "https://www.lubiah.com",
-		"name": "Lucretius Biah"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/lubiah/svelte-scrollprogress.git"
-	},
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build && npm run package",
-		"preview": "vite preview",
-		"package": "svelte-kit sync && svelte-package && publint",
-		"prepublishOnly": "npm run package",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"svelte": "./dist/index.js"
-		}
-	},
-	"files": [
-		"dist",
-		"!dist/**/*.test.*",
-		"!dist/**/*.spec.*"
-	],
-	"peerDependencies": {
-		"svelte": "^3.54.0"
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.57.0",
-		"@sveltejs/adapter-static": "^3.0.10",
-		"@sveltejs/kit": "^2.49.3",
-		"@sveltejs/package": "^2.5.7",
-		"@typescript-eslint/eslint-plugin": "^8.52.0",
-		"@typescript-eslint/parser": "^8.52.0",
-		"eslint": "^9.39.2",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-svelte": "^3.13.1",
-		"prettier": "^3.7.4",
-		"prettier-plugin-svelte": "^3.4.1",
-		"publint": "^0.3.16",
-		"svelte": "^5.46.1",
-		"svelte-check": "^4.3.5",
-		"tslib": "^2.8.1",
-		"typescript": "^5.9.3",
-		"vite": "^7.3.0",
-		"vitest": "^4.0.16"
-	},
-	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"type": "module"
+  "name": "svelte-scrollprogress",
+  "description": "A powerful package that adds a customizable scroll meter to your website or web application. It dynamically displays your scrolling progress and allows you to position it anywhere - top, bottom, left, or right - to fit your design perfectly.",
+  "homepage": "https://lubiah.github.io/svelte-scrollprogress",
+  "version": "1.0.7",
+  "keywords": [
+    "svelte",
+    "scroll progress",
+    "scroll",
+    "svelte components",
+    "web components"
+  ],
+  "author": {
+    "email": "lucretiusbiah@protonmail.com",
+    "url": "https://www.lubiah.com",
+    "name": "Lucretius Biah"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lubiah/svelte-scrollprogress.git"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build && npm run prepack",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "prepack": "svelte-kit sync && svelte-package && publint",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.test.*",
+    "!dist/**/*.spec.*"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "svelte": "./dist/index.js"
+    }
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^7.0.0",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.49.1",
+    "@sveltejs/package": "^2.5.7",
+    "@sveltejs/vite-plugin-svelte": "^6.2.1",
+    "publint": "^0.3.15",
+    "runed": "^0.37.1",
+    "svelte": "^5.45.6",
+    "svelte-check": "^4.3.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.6"
+  }
 }
